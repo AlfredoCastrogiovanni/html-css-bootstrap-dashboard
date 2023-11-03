@@ -6,10 +6,45 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 /* Header */
 header {
     height: 80px;
     background-color: rgb(248, 249, 250);
+}
+
+header nav {
+    width: 100%;
+    background-color: white;
+}
+
+header nav .logo {
+    width: 50px;
+}
+
+header nav .logo-desktop {
+    width: 180px;
+}
+
+header nav .search {
+    width: 100%;
+}
+
+header nav .search .my_input {
+    background-color: rgb(229, 229, 229);
+}
+
+header nav .search .my_input-label {
+    background-color: rgb(229, 229, 229);
+}
+
+header nav .buttons .fa-bell {
+    color: rgb(255, 143, 0);
 }
 
 aside {
