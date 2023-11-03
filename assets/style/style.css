@@ -1,0 +1,45 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* General Classes */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    height: 80px;
+    background-color: rgb(248, 249, 250);
+}
+
+aside {
+    width: 100px;
+    height: calc(100vh - 80px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: rgb(5, 30, 52);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    width: calc(100vw - 100px);
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    background-color: red;
+}
+
+main > header {
+    height: 120px;
+    background-color: rgb(27, 114, 232);
+}
+
+/* Responsive Rules */
+@media screen and (min-width: 576px) {
+    aside {
+        width: 220px;
+    }
+
+    main {
+        width: calc(100vw - 220px);
+    }
+}
