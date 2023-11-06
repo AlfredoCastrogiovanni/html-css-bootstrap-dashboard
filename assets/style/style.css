@@ -124,10 +124,17 @@ table tr :nth-child(3) {
 }
 
 .my_column-width {
-    width: 40%;
+    width: 35%;
 }
 
 /* Responsive Rules */
+@media screen and (min-width: 768px) {
+    table tr :nth-child(2),
+    table tr :nth-child(3) {
+        display: table-cell;
+    }   
+}
+
 @media screen and (min-width: 992px) {
     aside {
         width: 180px;
@@ -138,9 +145,8 @@ table tr :nth-child(3) {
     }
 }
 
-@media screen and (min-width: 768px) {
-    table tr :nth-child(2),
-    table tr :nth-child(3) {
-        display: table-cell;
-    }   
+@media screen and (min-width: 1200px) {
+    .my_column-width {
+        width: 45%;
+    }
 }
