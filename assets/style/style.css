@@ -13,7 +13,7 @@ ul {
 }
 
 /* Header */
-header {
+body > header {
     height: 80px;
     background-color: rgb(248, 249, 250);
 }
@@ -76,8 +76,24 @@ main {
 }
 
 main > header {
-    height: 120px;
     background-color: rgb(27, 114, 232);
+}
+
+main > header .my_badge {
+    background-color: rgb(22, 91, 186)!important;
+}
+
+main > header .my_plus {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+main > header .my_offcanvas {
+    width: 700px!important;
 }
 
 .my_col {
