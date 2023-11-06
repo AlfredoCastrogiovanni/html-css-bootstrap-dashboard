@@ -12,6 +12,20 @@ ul {
     margin: 0;
 }
 
+.my_icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: top;
+}
+
+.my_button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(108, 117, 125);
+    border-radius: 5px;
+    color: rgb(108, 117, 125);
+}
+
 /* Header */
 body > header {
     height: 80px;
@@ -96,6 +110,23 @@ main > header .my_offcanvas {
     width: 700px!important;
 }
 
+/* TABLE */
+table tr :nth-child(2),
+table tr :nth-child(3),
+table tr :nth-child(4),
+table tr :nth-child(5) {
+    text-align: center;
+}
+
+table tr :nth-child(2),
+table tr :nth-child(3) {
+    display: none;
+}
+
+.my_column-width {
+    width: 40%;
+}
+
 /* Responsive Rules */
 @media screen and (min-width: 992px) {
     aside {
@@ -105,4 +136,11 @@ main > header .my_offcanvas {
     main {
         width: calc(100vw - 180px);
     }
+}
+
+@media screen and (min-width: 768px) {
+    table tr :nth-child(2),
+    table tr :nth-child(3) {
+        display: table-cell;
+    }   
 }
