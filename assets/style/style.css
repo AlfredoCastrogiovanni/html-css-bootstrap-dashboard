@@ -96,16 +96,6 @@ main > header .my_offcanvas {
     width: 700px!important;
 }
 
-.my_col {
-    background-color: red;
-    height: 500px;
-}
-
-.my_col2 {
-    background-color: blue;
-    height: 500px;
-}
-
 /* Responsive Rules */
 @media screen and (min-width: 992px) {
     aside {

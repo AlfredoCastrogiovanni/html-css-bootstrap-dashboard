@@ -72,13 +72,13 @@
         <!-- MAIN -->
         <main>
             <!-- MAIN > HEADER -->
-            <header class="py-3">
+            <header class="py-3 mb-4">
                 <div class="container-fluid">
                     <div class="row flex-column flex-sm-row-reverse justify-content-between text-white">
                         <div class="col-12 col-sm-3 mb-4 mb-sm-0">
                             <span class="pe-2">Nuovo studente</span>
                             <button class="my_plus" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">+</button>
-
+                            <!-- OFFCANVAS -->
                             <div class="offcanvas offcanvas-end my_offcanvas" tabindex="-1" id="offcanvasTop">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasTopLabel">Inserisci un nuovo studente</h5>
@@ -102,8 +102,8 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <label for="Password" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="password">
+                                            <label for="Password1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password1">
                                         </div>
                                         <div class="col-6">
                                             <label for="email" class="form-label">Indirizzo email</label>
@@ -113,16 +113,16 @@
                                             </div>
                                         </div>
                                         <div class="col-6">
-                                            <label for="Password" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="password">
+                                            <label for="Password2" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password2">
                                         </div>
                                         <div class="col-12 pb-3">
                                             <label for="address" class="form-label">Indirizzo</label>
-                                            <input type="password" class="form-control" id="address">
+                                            <input type="text" class="form-control" id="address">
                                         </div>
                                         <div class="col-6">
                                             <label for="city" class="form-label">Citta'</label>
-                                            <input type="password" class="form-control" id="city">
+                                            <input type="text" class="form-control" id="city">
                                         </div>
                                         <div class="col-4">
                                             <label for="state" class="form-label">Stato</label>
@@ -133,7 +133,7 @@
                                         </div>
                                         <div class="col-2 pb-3">
                                             <label for="cap" class="form-label">CAP</label>
-                                            <input type="password" class="form-control" id="cap">
+                                            <input type="number" class="form-control" id="cap">
                                         </div>
                                         <div class="col-12 pb-4">
                                             <label for="cap" class="form-label">Foto</label>
@@ -176,8 +176,116 @@
             </header>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-lg-8 my_col">col-8</div>
-                    <div class="col-12 col-lg-4 my_col2">col-4</div>
+                    <div class="col-12 col-lg-8">
+                        <!-- NEXT CLASS -->
+                        <div class="card mb-4">
+                            <div class="card-header fw-medium fs-3">
+                                Prossime classi
+                            </div>
+                            <div class="card-body">
+                            </div>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div class="card mb-4">
+                            <div class="card-header fw-medium fs-3">
+                                F.A.Q
+                            </div>
+                            <div class="card-body">
+                                <div class="accordion accordion-flush" id="faq">
+                                    <!-- QUESTION 1 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Come aggiungere un nuovo studente?
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                                            <div class="accordion-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- QUESTION 2 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                            <div class="accordion-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- QUESTION 3 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Posso usare la dashboard da mobile?
+                                        </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                            <div class="accordion-body">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+
+                        <!-- TODO -->
+                        <div class="card mb-4">
+                            <div class="card-header fw-medium fs-3">
+                                Todo
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="todo1">
+                                            <label class="form-check-label" for="todo1">
+                                                Kickoff nuove classi
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="todo2">
+                                            <label class="form-check-label" for="todo2">
+                                                Lezione su Bootstrap 5 in classe #75
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="todo3">
+                                            <label class="form-check-label" for="todo3">
+                                                Controllare username github studenti
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- ACTIVE USERS -->
+                        <div class="card">
+                            <img src="assets/img/stats.jpeg" class="card-img-top" alt="graph">
+                            <div class="card-body">
+                                <h5 class="card-title">Utenti attivi</h5>
+                                <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Gennaio: 1200</li>
+                                <li class="list-group-item">Febbraio: 800</li>
+                                <li class="list-group-item">Marzo: 1500</li>
+                            </ul>
+                            <a href="#" class="card-link py-3 ps-3">Visualizza report approfondito</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
