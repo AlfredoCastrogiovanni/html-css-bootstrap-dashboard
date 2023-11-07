@@ -132,7 +132,11 @@ table tr :nth-child(3) {
     table tr :nth-child(2),
     table tr :nth-child(3) {
         display: table-cell;
-    }   
+    }
+
+    main > header .my_offcanvas {
+        width: 100vw!important;
+    }
 }
 
 @media screen and (min-width: 992px) {
