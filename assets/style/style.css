@@ -106,10 +106,6 @@ main > header .my_plus {
     border-radius: 5px;
 }
 
-main > header .my_offcanvas {
-    width: 700px!important;
-}
-
 /* TABLE */
 table tr :nth-child(2),
 table tr :nth-child(3),
@@ -146,6 +142,10 @@ table tr :nth-child(3) {
 
     main {
         width: calc(100vw - 180px);
+    }
+
+    main > header .my_offcanvas {
+        width: 700px!important;
     }
 }
 
